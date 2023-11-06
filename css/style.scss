@@ -1,19 +1,45 @@
 // npx sass --watch css/style.css css/style.css 로 사용
 
-html ,body {
+html, body {
     padding : 0;
     margin : 0;
     width : 100%;
     height : 100%;
 }
+
+// nav
 nav {
     width : 100%;
-    height : 3rem;
-    border : 1px solid black;
+    height : 3.5rem;
     display : flex;
     justify-content : space-between;
+    align-items : center;
+    position : fixed;
+    // border-color : #E5EAF2; 
+}
+
+
+
+// 로고
+.MuiBox-root {
+
+}
+
+.logoText {
+    font-size : 12px;
+    font-weight : bold;
+    border-left : 1px solid gray;
+}
+
+#contents {
+    position : relative;
 }
 
 aside {
+    position : absolute;
+    left : 0;
+    top : 0;
+    height : 100rem;
+    width : 300px;
     border : 1px solid black;
 }
