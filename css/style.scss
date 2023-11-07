@@ -7,39 +7,122 @@ html, body {
     height : 100%;
 }
 
+ul, li {
+    list-style : none;
+}
+
 // nav
 nav {
     width : 100%;
-    height : 3.5rem;
+    height : 60px;
     display : flex;
     justify-content : space-between;
     align-items : center;
     position : fixed;
+    top : 0;
+    left : 0;
+    padding : 0;
+    margin : 0;
     // border-color : #E5EAF2; 
+    border-bottom : 1px solid #E5EAF2;
+
 }
-
-
 
 // 로고
-.MuiBox-root {
-
-}
-
-.logoText {
-    font-size : 12px;
-    font-weight : bold;
-    border-left : 1px solid gray;
-}
 
 #contents {
     position : relative;
 }
 
 aside {
-    position : absolute;
+    position : fixed;
     left : 0;
     top : 0;
-    height : 100rem;
+    height : 100%;
     width : 300px;
-    border : 1px solid black;
+    display : flex;
+    flex-direction : column;
+    .logo-wrapper {
+        display: flex;
+        align-items : center;
+        margin-left : 12px;
+        height : 60px;
+        width : 300px;
+        gap : 12px;
+        color : #6B7A90;
+        .devide-line {
+            height : 2rem;
+            border-left : 1px solid #E5EAF2;
+        }
+        .logoText {
+            margin : 0;
+            padding : 0;
+            font-size : 12px;
+            font-weight : bold;
+            letter-spacing : 2px;
+        }
+    }
+    .menu-wrapper {
+        width : 300px;
+        flex : 1;
+        border-right : 1px solid #E5EAF2;
+    }
+}
+.ItemButtonIcon {
+    width : 16px;
+    color : #007FFF;
+}
+
+.iconFocus {
+    transform : rotate(90deg);
+}
+
+ul {
+    margin : 0;
+    padding : 0;
+}
+
+.menu-list {
+    display : flex;
+    flex-direction : column;
+    padding : 8px 10px 0px 10px;
+}
+// 좌측 사이드바 큰 메뉴분류
+.menu-big {
+    display : flex;
+    flex-direction : row;
+    gap : 4px;
+    align-items:center;
+    font-size : 0.875rem;
+    line-height : 1.5;
+    font-family :"IBM Plex Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    margin-bottom:8px;
+    cursor : pointer;
+}
+
+.submenu-list {
+    // padding : 4px 30px;
+    margin-bottom : 12px;
+    p {
+        color : #878a8d;
+        padding : 0;
+        font-size : 12px;
+        font-weight : bold;     
+        letter-spacing: 1px;   
+        margin : 12px 12px ;
+        user-select : none;
+    }
+}
+.menu-small-list {
+    display : flex;
+    flex-direction : column;
+}
+.menu-small {
+    color : #434D5B;
+    padding : 4px 12px;
+    border-radius : 4px;
+    cursor : pointer;
+}
+.menu-small:hover {
+    background-color: #e2e3e4;
 }
