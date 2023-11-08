@@ -32,14 +32,15 @@ MUI에 있는 컴포넌트가 있는 페이지를 클론코딩하여 그대로 �
 ## 할일 목록
 ### Layout
 
-- [ ] Navs
-- [ ] Left Bar (aside)
+- [v] Navs
+- [v] Left Bar (aside)
 - [ ] Right Bar (div > rightBar)
+- [ ] Responsive css
 
 ### Virtual List
     
-- [ ] Basic List
-- [ ] Nested List
+- [v] Basic List
+- [v] Nested List
 - [ ] Folder List
 - [ ] Interactive List
 - [ ] Selected ListItem 
@@ -71,3 +72,8 @@ MUI에 있는 컴포넌트가 있는 페이지를 클론코딩하여 그대로 �
 - [ ] Basic accordion
 - [ ] Controlled accordion
 - [ ] Customization
+
+
+## Reference
+- Icon : https://fonts.google.com/icons?selected=Material+Icons:star_border:&icon.query=star
+- 
