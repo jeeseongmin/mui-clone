@@ -233,13 +233,43 @@ ul {
 .list-component ul {
   padding: 8px 0;
 }
-.list-component li {
+.list-component li:not(.folder-li) {
   padding: 12px 16px;
   display: flex;
   align-items: center;
   gap: 30px;
   cursor: pointer;
   color: rgb(79, 79, 79);
+}
+.list-component .folder-li {
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  color: rgb(79, 79, 79);
+}
+.list-component .folder-li .folder-icon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgb(191, 190, 190);
+  background-color: rgb(191, 190, 190);
+  border-radius: 100%;
+  color: white;
+}
+.list-component .folder-li div {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.list-component .folder-li div span {
+  color: rgb(159, 157, 157);
+  font-size: 14px;
 }
 .list-component .nested-li {
   padding: 12px 36px;
@@ -249,7 +279,7 @@ ul {
   cursor: pointer;
   color: rgb(79, 79, 79);
 }
-.list-component li:hover {
+.list-component li:hover:not(.folder-li) {
   background-color: rgb(244, 244, 244);
 }
 .list-component .list-hr {

@@ -238,13 +238,42 @@ ul {
     ul {
         padding : 8px 0;
     }
-    li {
+    li:not(.folder-li) {
         padding : 12px 16px;
         display : flex;
         align-items : center;
         gap : 30px;
         cursor:pointer;
         color : rgb(79, 79, 79);
+    }
+    .folder-li {
+        padding : 12px 16px;
+        display : flex;
+        align-items : center;
+        gap : 24px;
+        user-select:none;
+        color : rgb(79, 79, 79);
+
+        .folder-icon { 
+            width : 40px;
+            height : 40px;
+            display : flex;
+            justify-content : center;
+            align-items: center;
+            border : 1px solid rgb(191, 190, 190);
+            background-color : rgb(191, 190, 190);
+            border-radius : 100%;
+            color : white;
+        }
+        div {
+            display : flex;
+            flex-direction : column;
+            gap : 6px;
+            span {
+                color : rgb(159, 157, 157);
+                font-size : 14px;
+            }
+        }
     }
     .nested-li {
         padding : 12px 36px;
@@ -254,7 +283,7 @@ ul {
         cursor:pointer;
         color : rgb(79, 79, 79);
     }
-    li:hover {
+    li:hover:not(.folder-li) {
         background-color : rgb(244, 244, 244);
     }
     .list-hr {
