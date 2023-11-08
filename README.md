@@ -32,15 +32,15 @@ MUI에 있는 컴포넌트가 있는 페이지를 클론코딩하여 그대로 �
 ## 할일 목록
 ### Layout
 
-- [v] Navs
-- [v] Left Bar (aside)
+- [x] Navs
+- [x] Left Bar (aside)
 - [ ] Right Bar (div > rightBar)
 - [ ] Responsive css
 
 ### Virtual List
     
-- [v] Basic List
-- [v] Nested List
+- [x] Basic List
+- [x] Nested List
 - [ ] Folder List
 - [ ] Interactive List
 - [ ] Selected ListItem 
