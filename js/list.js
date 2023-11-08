@@ -11,7 +11,6 @@ haha.addEventListener("click", function (event) {
 
   // arrow icon 변경
   icon = li.lastElementChild;
-  console.log(icon, icon.innerText);
   if (icon.innerText === "expand_more") icon.innerText = "expand_less";
   else icon.innerText = "expand_more";
   // nested-li toggle 처리
