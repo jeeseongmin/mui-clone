@@ -23,8 +23,10 @@ nav {
     left : 0;
     padding : 0;
     margin : 0;
+    z-index : 200;
     // border-color : #E5EAF2; 
     border-bottom : 1px solid #E5EAF2;
+    background-color : white;
 
 }
 
@@ -32,16 +34,22 @@ nav {
 
 #contents {
     position : relative;
+    width : 100%;
+    height : 100%;
+    display : flex;
+    flex-direction : row;
+    overflow-y : hidden;
 }
 
 aside {
-    position : fixed;
-    left : 0;
-    top : 0;
+    // position : fixed;
+    // left : 0;
+    // top : 0;
     height : 100%;
     width : 300px;
     display : flex;
     flex-direction : column;
+    z-index : 210;
     .logo-wrapper {
         display: flex;
         align-items : center;
@@ -50,6 +58,7 @@ aside {
         width : 300px;
         gap : 12px;
         color : #6B7A90;
+        z-index : inherit;
         .devide-line {
             height : 2rem;
             border-left : 1px solid #E5EAF2;
@@ -95,9 +104,13 @@ ul {
     align-items:center;
     font-size : 0.875rem;
     line-height : 1.5;
-    font-family :"IBM Plex Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-family : 'IBM Plex Sans Condensed';
+    letter-spacing: 1px;
+    // font-family :"IBM Plex Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    margin-top : 12px;
     margin-bottom:8px;
     cursor : pointer;
+    padding-left : 10px;
 }
 
 .submenu-list {
@@ -122,7 +135,154 @@ ul {
     padding : 4px 12px;
     border-radius : 4px;
     cursor : pointer;
+    display : flex;
+    align-items:center;
+    font-family : "IBM Plex Sans Condensed";
+    font-size : 14px;
 }
 .menu-small:hover {
-    background-color: #e2e3e4;
+    background-color: #f0f5f8;
+}
+
+// main contents
+
+#main {
+    z-index : 100;
+    display : grid;
+    min-height : 100vh;
+    width : 100%;
+    grid-template-columns : 1fr 242px;
+    overflow-x : hidden;
+}
+.main-wrapper {
+    width : 100%;
+    padding-top : 60px;
+    padding-left : 60px;
+    padding-right : 60px;
+    height : auto;
+    box-sizing : border-box;
+    // padding : 24px 60px;
+    max-width : 105ch;
+    font-family : Arial;
+    min-width : 0;
+    margin : 0 auto;
+
+    display : flex;
+    flex-direction : column;
+    gap : 16px;
+    
+    .main-intro {
+        line-height : 1.5625;
+        font-weight : 400;
+        font-size: 1rem;
+        font-family: "IBM Plex Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    }
+}
+.mark-wrapper {
+    padding-top : 60px;
+    width : 280px;
+    background-color : #F3F6F9;
+}
+.component-box {
+    padding : 24px;
+    display : flex;
+    justify-content : center;
+    border-radius : 12px 12px 0 0;
+    border : 1px solid;
+    background-color : #F3F6F9;
+    border : 1px solid #E5EAF2;
+}
+
+// 각 컴포넌트 별 공통
+.component-bottom {
+    height :48px;
+    border : 1px solid #E5EAF2;
+    padding : 4px 20px;
+    display : flex;
+    justify-content : flex-end;
+    align-items:center;
+    margin-top : -1px;
+    border-radius : 0 0 12px 12px;
+    a {
+        border : 1px solid rgba(194, 224, 255, 0.6);
+        padding : 3px 16px;
+        color : rgb(0, 127, 255);
+        font-size : 14px;
+        border-radius : 100px;
+        cursor: pointer;
+        text-decoration : none;
+    }
+}
+
+.normal-icon {
+    min-width : 56px;
+    color : rgba(108, 105, 105, 0.54);
+    // width : 1em;
+}
+
+.list-component {
+    width : 100%;
+    max-width : 360px;
+    background-color : white;
+    .title {
+        padding : 12px 16px;
+        font-size : 14px;
+        user-select: none;
+        color : rgb(79, 79, 79);
+    }
+    p {
+        margin : 0;
+        flex : 1;
+        user-select: none;
+    }
+    ul {
+        padding : 8px 0;
+    }
+    li {
+        padding : 12px 16px;
+        display : flex;
+        align-items : center;
+        gap : 30px;
+        cursor:pointer;
+        color : rgb(79, 79, 79);
+    }
+    .nested-li {
+        padding : 12px 36px;
+        display : flex;
+        align-items : center;
+        gap : 30px;
+        cursor:pointer;
+        color : rgb(79, 79, 79);
+    }
+    li:hover {
+        background-color : rgb(244, 244, 244);
+    }
+    .basic-list-hr {
+        border-color : rgba(0, 0, 0, 0.12);
+        margin : 0;
+    }
+    .icon {
+        width : 24px;
+        height : 24px;
+        display : flex;
+        justify-content : center;
+        align-items: center;
+        user-select: none;
+    }
+    .right {
+        float :right;
+        // border : 1px solid red;
+    }
+    .toggle-hidden {
+        display : none;
+    }
+    
+}
+
+.hidden {
+    display : none;
+}
+
+.red {
+    border : 1px solid red;
 }

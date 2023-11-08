@@ -6,6 +6,20 @@
     <title>MUI Clone</title>
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/lists.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=IBM Plex Sans Condensed"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
   </head>
   <body>
     <!-- nav -->
@@ -43,7 +57,7 @@
             <ul>
               <li class="menu-list">
                 <a class="menu-big">
-                  <svg
+                  <!-- <svg
                     class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium ItemButtonIcon iconFocus css-1c9jvr1"
                     focusable="false"
                     aria-hidden="true"
@@ -53,7 +67,7 @@
                     <path
                       d="M9.29 15.88 13.17 12 9.29 8.12a.9959.9959 0 0 1 0-1.41c.39-.39 1.02-.39 1.41 0l4.59 4.59c.39.39.39 1.02 0 1.41L10.7 17.3c-.39.39-1.02.39-1.41 0-.38-.39-.39-1.03 0-1.42z"
                     ></path>
-                  </svg>
+                  </svg> -->
                   Components
                 </a>
                 <div class="submenu-list">
@@ -80,9 +94,475 @@
         </div>
       </aside>
       <!-- 메인 컨텐츠 -->
-      <div id="main"></div>
+      <div id="main">
+        <div class="main-wrapper">
+          <div class="main-intro">
+            <h1>Lists</h1>
+            <p>Lists are continuous, vertical indexes of text or images.</p>
+            <p>
+              Lists are a continuous group of text or images. They are composed
+              of items containing primary and supplemental actions, which are
+              represented by icons and text.
+            </p>
+          </div>
+          <!-- Component  -->
+          <div class="single-component hidden">
+            <h2 id="basic-list">
+              Basic List
+              <a
+                aria-labelledby="basic-list"
+                class="anchor-link"
+                href="#basic-list"
+                tabindex="-1"
+              ></a>
+            </h2>
+            <div>
+              <div class="component-box">
+                <div class="list-component">
+                  <ul>
+                    <li>
+                      <span class="icon material-icons"> inbox </span>
+                      <p>Inbox</p>
+                    </li>
+                    <li>
+                      <span class="icon material-icons"> drafts </span>
+                      <p>Drafts</p>
+                    </li>
+                  </ul>
+                  <hr class="basic-list-hr" />
+                  <ul>
+                    <li>
+                      <p>Trash</p>
+                    </li>
+                    <li>
+                      <p>Spam</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="component-bottom">
+                <a
+                  target="_blank"
+                  href="https://mui.com/material-ui/react-list/#basic-list"
+                  >mui-link</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Component -->
+          <div class="single-component hidden">
+            <h2 id="nested-list">
+              Nested List
+              <a
+                aria-labelledby="nested-list"
+                class="anchor-link"
+                href="#nested-list"
+                tabindex="-1"
+              ></a>
+            </h2>
+            <div>
+              <div class="component-box">
+                <div class="list-component">
+                  <ul>
+                    <div class="title">Nested List Items</div>
+                    <li>
+                      <span class="icon material-icons"> send </span>
+                      <p>Sent mail</p>
+                    </li>
+                    <li>
+                      <span class="icon material-icons"> drafts </span>
+                      <p>Drafts</p>
+                    </li>
+                    <li id="toggle-li">
+                      <span class="icon material-icons"> move_to_inbox </span>
+                      <p>Inbox</p>
+                      <span class="icon right material-icons">
+                        expand_more
+                      </span>
+                    </li>
+                    <li class="nested-li toggle-hidden">
+                      <span class="icon material-icons"> star_border </span>
+                      <p>Starred</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="component-bottom">
+                <a
+                  target="_blank"
+                  href="https://mui.com/material-ui/react-list/#basic-list"
+                  >mui-link</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Component -->
+          <div class="single-component">
+            <h2 id="basic-list">Folder List</h2>
+            <div>
+              <div class="component-box">
+                <div class="basic-list">
+                  <ul>
+                    <li>
+                      <span class="icon material-icons"> inbox </span>
+                      <p>Inbox</p>
+                    </li>
+                    <li>
+                      <span class="icon material-icons"> drafts </span>
+                      <p>Drafts</p>
+                    </li>
+                  </ul>
+                  <hr class="basic-list-hr" />
+                  <ul>
+                    <li>
+                      <p>Trash</p>
+                    </li>
+                    <li>
+                      <p>Spam</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="component-bottom">
+                <a
+                  target="_blank"
+                  href="https://mui.com/material-ui/react-list/#basic-list"
+                  >mui-link</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Component -->
+          <div class="single-component">
+            <h2 id="basic-list">Interactive List</h2>
+            <div>
+              <div class="component-box">
+                <div class="basic-list">
+                  <ul>
+                    <li>
+                      <span class="icon material-icons"> inbox </span>
+                      <p>Inbox</p>
+                    </li>
+                    <li>
+                      <span class="icon material-icons"> drafts </span>
+                      <p>Drafts</p>
+                    </li>
+                  </ul>
+                  <hr class="basic-list-hr" />
+                  <ul>
+                    <li>
+                      <p>Trash</p>
+                    </li>
+                    <li>
+                      <p>Spam</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="component-bottom">
+                <a
+                  target="_blank"
+                  href="https://mui.com/material-ui/react-list/#basic-list"
+                  >mui-link</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Component -->
+          <div class="single-component">
+            <h2 id="basic-list">Selected ListItem</h2>
+            <div>
+              <div class="component-box">
+                <div class="basic-list">
+                  <ul>
+                    <li>
+                      <span class="icon material-icons"> inbox </span>
+                      <p>Inbox</p>
+                    </li>
+                    <li>
+                      <span class="icon material-icons"> drafts </span>
+                      <p>Drafts</p>
+                    </li>
+                  </ul>
+                  <hr class="basic-list-hr" />
+                  <ul>
+                    <li>
+                      <p>Trash</p>
+                    </li>
+                    <li>
+                      <p>Spam</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="component-bottom">
+                <a
+                  target="_blank"
+                  href="https://mui.com/material-ui/react-list/#basic-list"
+                  >mui-link</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Component -->
+          <div class="single-component">
+            <h2 id="basic-list">Align List Items</h2>
+            <div>
+              <div class="component-box">
+                <div class="basic-list">
+                  <ul>
+                    <li>
+                      <span class="icon material-icons"> inbox </span>
+                      <p>Inbox</p>
+                    </li>
+                    <li>
+                      <span class="icon material-icons"> drafts </span>
+                      <p>Drafts</p>
+                    </li>
+                  </ul>
+                  <hr class="basic-list-hr" />
+                  <ul>
+                    <li>
+                      <p>Trash</p>
+                    </li>
+                    <li>
+                      <p>Spam</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="component-bottom">
+                <a
+                  target="_blank"
+                  href="https://mui.com/material-ui/react-list/#basic-list"
+                  >mui-link</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Component -->
+          <div class="single-component">
+            <h2 id="basic-list">List Controls > checkbox</h2>
+            <div>
+              <div class="component-box">
+                <div class="basic-list">
+                  <ul>
+                    <li>
+                      <span class="icon material-icons"> inbox </span>
+                      <p>Inbox</p>
+                    </li>
+                    <li>
+                      <span class="icon material-icons"> drafts </span>
+                      <p>Drafts</p>
+                    </li>
+                  </ul>
+                  <hr class="basic-list-hr" />
+                  <ul>
+                    <li>
+                      <p>Trash</p>
+                    </li>
+                    <li>
+                      <p>Spam</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="component-bottom">
+                <a
+                  target="_blank"
+                  href="https://mui.com/material-ui/react-list/#basic-list"
+                  >mui-link</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Component -->
+          <div class="single-component">
+            <h2 id="basic-list">List Controls > switch</h2>
+            <div>
+              <div class="component-box">
+                <div class="basic-list">
+                  <ul>
+                    <li>
+                      <span class="icon material-icons"> inbox </span>
+                      <p>Inbox</p>
+                    </li>
+                    <li>
+                      <span class="icon material-icons"> drafts </span>
+                      <p>Drafts</p>
+                    </li>
+                  </ul>
+                  <hr class="basic-list-hr" />
+                  <ul>
+                    <li>
+                      <p>Trash</p>
+                    </li>
+                    <li>
+                      <p>Spam</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="component-bottom">
+                <a
+                  target="_blank"
+                  href="https://mui.com/material-ui/react-list/#basic-list"
+                  >mui-link</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Component -->
+          <div class="single-component">
+            <h2 id="basic-list">Sticky subheader</h2>
+            <div>
+              <div class="component-box">
+                <div class="basic-list">
+                  <ul>
+                    <li>
+                      <span class="icon material-icons"> inbox </span>
+                      <p>Inbox</p>
+                    </li>
+                    <li>
+                      <span class="icon material-icons"> drafts </span>
+                      <p>Drafts</p>
+                    </li>
+                  </ul>
+                  <hr class="basic-list-hr" />
+                  <ul>
+                    <li>
+                      <p>Trash</p>
+                    </li>
+                    <li>
+                      <p>Spam</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="component-bottom">
+                <a
+                  target="_blank"
+                  href="https://mui.com/material-ui/react-list/#basic-list"
+                  >mui-link</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Component -->
+          <div class="single-component">
+            <h2 id="basic-list">Inset List Item</h2>
+            <div>
+              <div class="component-box">
+                <div class="basic-list">
+                  <ul>
+                    <li>
+                      <span class="icon material-icons"> inbox </span>
+                      <p>Inbox</p>
+                    </li>
+                    <li>
+                      <span class="icon material-icons"> drafts </span>
+                      <p>Drafts</p>
+                    </li>
+                  </ul>
+                  <hr class="basic-list-hr" />
+                  <ul>
+                    <li>
+                      <p>Trash</p>
+                    </li>
+                    <li>
+                      <p>Spam</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="component-bottom">
+                <a
+                  target="_blank"
+                  href="https://mui.com/material-ui/react-list/#basic-list"
+                  >mui-link</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Component -->
+          <div class="single-component">
+            <h2 id="basic-list">Gutterless List</h2>
+            <div>
+              <div class="component-box">
+                <div class="basic-list">
+                  <ul>
+                    <li>
+                      <span class="icon material-icons"> inbox </span>
+                      <p>Inbox</p>
+                    </li>
+                    <li>
+                      <span class="icon material-icons"> drafts </span>
+                      <p>Drafts</p>
+                    </li>
+                  </ul>
+                  <hr class="basic-list-hr" />
+                  <ul>
+                    <li>
+                      <p>Trash</p>
+                    </li>
+                    <li>
+                      <p>Spam</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="component-bottom">
+                <a
+                  target="_blank"
+                  href="https://mui.com/material-ui/react-list/#basic-list"
+                  >mui-link</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Component -->
+          <div class="single-component">
+            <h2 id="basic-list">Virtualized List</h2>
+            <div>
+              <div class="component-box">
+                <div class="basic-list">
+                  <ul>
+                    <li>
+                      <span class="icon material-icons"> inbox </span>
+                      <p>Inbox</p>
+                    </li>
+                    <li>
+                      <span class="icon material-icons"> drafts </span>
+                      <p>Drafts</p>
+                    </li>
+                  </ul>
+                  <hr class="basic-list-hr" />
+                  <ul>
+                    <li>
+                      <p>Trash</p>
+                    </li>
+                    <li>
+                      <p>Spam</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="component-bottom">
+                <a
+                  target="_blank"
+                  href="https://mui.com/material-ui/react-list/#basic-list"
+                  >mui-link</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- right aside : 컴포넌트 목차 -->
+        <div class="mark-wrapper"></div>
+      </div>
     </div>
   </body>
 
   <script src="js/index.js"></script>
+  <script src="js/list.js"></script>
 </html>
