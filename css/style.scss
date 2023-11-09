@@ -404,7 +404,7 @@ ul {
         cursor:pointer;
         color : rgb(79, 79, 79);
     }
-    li:hover:not(.folder-li, .select-none) {
+    li:hover:not(.folder-li, .select-none, .selected) {
         background-color : rgb(244, 244, 244);
     }
     .list-hr {
@@ -425,7 +425,9 @@ ul {
     .toggle-hidden {
         display : none;
     }
-    
+    .selected {
+        background-color : rgba(25, 118, 210, 0.08);
+    }
 }
 
 .hidden {

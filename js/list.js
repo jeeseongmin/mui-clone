@@ -36,9 +36,32 @@ denseCheckbox.addEventListener("click", function (event) {
 // Enable secondary text
 let secondaryCheckbox = document.getElementById("enable-secondary-text");
 secondaryCheckbox.addEventListener("click", function (event) {
-  console.log(event.target.checked);
   let secondaryTextComponents = document.querySelectorAll("#secondary-text");
   secondaryTextComponents.forEach((item) => {
     item.classList.toggle("hidden");
   });
+});
+
+/**
+ * Selected Listitem
+ * 1. 해당 row 클릭 시 모든 row에서 selected 제거
+ * 2. 해당 row에 selected 추가
+ */
+let selectiveLi = document.getElementById("selective-li");
+window.addEventListener("click", function (event) {
+  let targetLi;
+  //
+  if (event.target.id === "selective-li") {
+    targetLi = event.target;
+  } else if (event.target.parentNode.id === "selective-li") {
+    targetLi = event.target.parentNode;
+  }
+
+  if (targetLi && !targetLi.classList.contains("selected")) {
+    let lists = document.querySelectorAll("#selective-li");
+    lists.forEach((item) => {
+      item.removeAttribute("class", "selected");
+    });
+    targetLi.setAttribute("class", "selected");
+  }
 });
