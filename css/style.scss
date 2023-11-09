@@ -285,7 +285,6 @@ ul {
       }
       .delete-icon:hover {
         background-color : rgb(212, 211, 211);
-
       }
 
       .dense {
@@ -419,6 +418,13 @@ ul {
         align-items: center;
         user-select: none;
     }
+
+    .image-icon {
+        width : 40px;
+        height :40px;
+        border-radius : 100%;
+        margin-right : -10px;
+    }
     .right {
         float :right;
     }
@@ -428,6 +434,22 @@ ul {
     .selected {
         background-color : rgba(25, 118, 210, 0.08);
     }
+
+    .contents {
+        flex : 1;
+    
+        p {
+            margin : 0;
+            padding : 0;
+        }
+        .hidden {
+            display : none;
+        }
+        #secondary-text {
+            color : rgb(140, 138, 138);
+            font-size : 14px;
+        }
+      }
 }
 
 .hidden {
@@ -436,6 +458,17 @@ ul {
 
 .red {
     border : 1px solid red;
+}
+
+.font-black {
+    color : black;
+}
+.gray-hr {
+    margin-top : 5px;
+    margin-left : 75px;
+    flex : 1;
+    height : 1px;
+    background-color : rgb(215, 215, 215);
 }
 
 
