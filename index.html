@@ -197,7 +197,7 @@
             </div>
           </div>
           <!-- Folder List Component -->
-          <div class="single-component">
+          <div class="single-component hidden">
             <h2 id="folder-list">Folder List</h2>
             <div>
               <div class="component-box">
@@ -242,27 +242,158 @@
           <div class="single-component">
             <h2 id="interactive">Interactive List</h2>
             <div>
-              <div class="component-box">
-                <div class="list-component">
-                  <ul>
-                    <li>
-                      <span class="icon material-icons"> inbox </span>
-                      <p>Inbox</p>
-                    </li>
-                    <li>
-                      <span class="icon material-icons"> drafts </span>
-                      <p>Drafts</p>
-                    </li>
-                  </ul>
-                  <hr class="list-hr" />
-                  <ul>
-                    <li>
-                      <p>Trash</p>
-                    </li>
-                    <li>
-                      <p>Spam</p>
-                    </li>
-                  </ul>
+              <div class="component-box interactive-component-box">
+                <div class="checkbox-container">
+                  <label class="checkbox-component">
+                    <input type="checkbox" id="enable-dense" class="checkbox" />
+                    <p>Enable dense</p>
+                  </label>
+                  <label class="checkbox-component">
+                    <input
+                      type="checkbox"
+                      id="enable-secondary-text"
+                      class="checkbox"
+                    />
+                    <p>Enable secondary text</p>
+                  </label>
+                </div>
+
+                <div class="grid">
+                  <!-- #1 -->
+                  <div>
+                    <h3>Text only</h3>
+                    <div class="list-component" id="interactive-component">
+                      <ul>
+                        <li class="select-none">
+                          <div class="contents">
+                            <p>Single-line item</p>
+                            <p id="secondary-text">Secondary text</p>
+                          </div>
+                        </li>
+                        <li class="select-none">
+                          <div class="contents">
+                            <p>Single-line item</p>
+                            <p id="secondary-text">Secondary text</p>
+                          </div>
+                        </li>
+                        <li class="select-none">
+                          <div class="contents">
+                            <p>Single-line item</p>
+                            <p id="secondary-text">Secondary text</p>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <!-- #2 -->
+                  <div>
+                    <h3>Icon with text</h3>
+                    <div class="list-component" id="interactive-component">
+                      <ul>
+                        <li class="select-none">
+                          <span class="icon material-icons"> folder </span>
+                          <div class="contents">
+                            <p>Single-line item</p>
+                            <p id="secondary-text">Secondary text</p>
+                          </div>
+                        </li>
+                        <li class="select-none">
+                          <span class="icon material-icons"> folder </span>
+                          <div class="contents">
+                            <p>Single-line item</p>
+                            <p id="secondary-text">Secondary text</p>
+                          </div>
+                        </li>
+                        <li class="select-none">
+                          <span class="icon material-icons"> folder </span>
+                          <div class="contents">
+                            <p>Single-line item</p>
+                            <p id="secondary-text">Secondary text</p>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <!-- #3 -->
+                  <div>
+                    <h3>Avatar with text</h3>
+                    <div class="list-component" id="interactive-component">
+                      <ul>
+                        <li class="folder-li">
+                          <span class="folder-icon material-icons">
+                            folder
+                          </span>
+                          <div class="contents">
+                            <p>Single-line item</p>
+                            <p id="secondary-text">Secondary text</p>
+                          </div>
+                        </li>
+                        <li class="folder-li">
+                          <span class="folder-icon material-icons">
+                            folder
+                          </span>
+                          <div class="contents">
+                            <p>Single-line item</p>
+                            <p id="secondary-text">Secondary text</p>
+                          </div>
+                        </li>
+                        <li class="folder-li">
+                          <span class="folder-icon material-icons">
+                            folder
+                          </span>
+                          <div class="contents">
+                            <p>Single-line item</p>
+                            <p id="secondary-text">Secondary text</p>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <!-- #4 -->
+                  <div>
+                    <h3>Avatar with text and icon</h3>
+                    <div class="list-component" id="interactive-component">
+                      <ul>
+                        <li class="folder-li">
+                          <span class="folder-icon material-icons">
+                            folder
+                          </span>
+                          <div class="contents">
+                            <p>Single-line item</p>
+                            <p id="secondary-text">Secondary text</p>
+                          </div>
+                          <span class="right delete-icon material-icons">
+                            delete
+                          </span>
+                        </li>
+                        <li class="folder-li">
+                          <span class="folder-icon material-icons">
+                            folder
+                          </span>
+                          <div class="contents">
+                            <p>Single-line item</p>
+                            <p id="secondary-text">Secondary text</p>
+                          </div>
+                          <span class="right delete-icon material-icons">
+                            delete
+                          </span>
+                        </li>
+                        <li class="folder-li">
+                          <span class="folder-icon material-icons">
+                            folder
+                          </span>
+                          <div class="contents">
+                            <p>Single-line item</p>
+                            <p id="secondary-text">Secondary text</p>
+                          </div>
+                          <span class="right delete-icon material-icons">
+                            delete
+                          </span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div class="component-bottom">
