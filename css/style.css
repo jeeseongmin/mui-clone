@@ -480,6 +480,54 @@ input[id=check1]:checked {
   background-color: rgb(215, 215, 215);
 }
 
+.switch-wrapper {
+  position: relative;
+}
+
+.switch-component {
+  position: absolute;
+  -webkit-appearance: none;
+          appearance: none;
+  visibility: hidden;
+  -webkit-apperance: none;
+  -moz-appearance: none;
+}
+
+.switch-label {
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  width: 36px;
+  height: 14px;
+  background: rgb(181, 179, 179);
+  border-radius: 20px;
+  transition: 0.2s;
+}
+
+.switch-btn {
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  display: inline-block;
+  width: 21px;
+  height: 21px;
+  border-radius: 20px;
+  background: white;
+  transition: 0.2s;
+  box-shadow: 1px 2px 3px gray;
+}
+
+.switch-component:checked + .switch-label {
+  background: #89c0f6;
+}
+
+/* move */
+.switch-component:checked + .switch-label .switch-btn {
+  left: 20px;
+  background: #1976d2;
+  box-shadow: 1px 2px 3px #1976d2;
+}
+
 @media only screen and (max-width: 1260px) {
   .interactive-component-box .grid {
     grid-template-columns: 1fr;

@@ -683,28 +683,40 @@
             </div>
           </div>
           <!-- Switch Component -->
-          <div class="single-component">
+          <div class="single-component hidden">
             <h2 id="switch">List Controls > switch</h2>
             <div>
               <div class="component-box">
                 <div class="list-component">
                   <ul>
-                    <li>
-                      <span class="icon material-icons"> inbox </span>
-                      <p>Inbox</p>
+                    <div class="title">Settings</div>
+                    <li class="select-none">
+                      <span class="icon material-icons"> wifi </span>
+                      <p>Wi-Fi</p>
+                      <div class="switch-wrapper">
+                        <input
+                          type="checkbox"
+                          id="switch-component"
+                          class="switch-component"
+                        />
+                        <label for="switch-component" class="switch-label">
+                          <span class="switch-btn"></span>
+                        </label>
+                      </div>
                     </li>
-                    <li>
-                      <span class="icon material-icons"> drafts </span>
-                      <p>Drafts</p>
-                    </li>
-                  </ul>
-                  <hr class="list-hr" />
-                  <ul>
-                    <li>
-                      <p>Trash</p>
-                    </li>
-                    <li>
-                      <p>Spam</p>
+                    <li class="select-none">
+                      <span class="icon material-icons"> bluetooth </span>
+                      <p>Bluetooth</p>
+                      <div class="switch-wrapper">
+                        <input
+                          type="checkbox"
+                          id="switch-component2"
+                          class="switch-component"
+                        />
+                        <label for="switch-component2" class="switch-label">
+                          <span class="switch-btn"></span>
+                        </label>
+                      </div>
                     </li>
                   </ul>
                 </div>
