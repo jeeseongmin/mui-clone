@@ -65,3 +65,15 @@ window.addEventListener("click", function (event) {
     targetLi.setAttribute("class", "selected");
   }
 });
+
+/**
+ * Virtualized List
+ */
+let VirtualizedLi = document.getElementById("virtualized-component");
+let data = Array.from({ length: 200 }, (n, i) => i + 1);
+
+data.forEach((n, index) => {
+  let element = document.createElement("li");
+  element.innerText = `item ${n}`;
+  VirtualizedLi.childNodes[1].appendChild(element);
+});

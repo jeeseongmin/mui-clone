@@ -469,7 +469,14 @@ input[id="check1"]:checked{
         padding : 15px 7px 15px 0!important;
     }
 }
+.virtualized-list {
+    height : 250px;
+    overflow : scroll;
+}
 
+a {
+    text-decoration : none;
+}
 .right {
     float :right;
 }
