@@ -363,7 +363,7 @@
                             <p>Single-line item</p>
                             <p id="secondary-text">Secondary text</p>
                           </div>
-                          <span class="right delete-icon material-icons">
+                          <span class="right hover-icon material-icons">
                             delete
                           </span>
                         </li>
@@ -375,7 +375,7 @@
                             <p>Single-line item</p>
                             <p id="secondary-text">Secondary text</p>
                           </div>
-                          <span class="right delete-icon material-icons">
+                          <span class="right hover-icon material-icons">
                             delete
                           </span>
                         </li>
@@ -387,7 +387,7 @@
                             <p>Single-line item</p>
                             <p id="secondary-text">Secondary text</p>
                           </div>
-                          <span class="right delete-icon material-icons">
+                          <span class="right hover-icon material-icons">
                             delete
                           </span>
                         </li>
@@ -442,13 +442,13 @@
             </div>
           </div>
           <!-- Align List Items Component -->
-          <div class="single-component">
+          <div class="single-component hidden">
             <h2 id="align-list-items">Align List Items</h2>
             <div>
               <div class="component-box">
                 <div class="list-component">
                   <ul>
-                    <li>
+                    <li class="select-none">
                       <span class="image-icon-wrapper">
                         <img class="image-icon" src="/static/image/1.jpeg" />
                       </span>
@@ -463,7 +463,7 @@
                       </div>
                     </li>
                     <div class="gray-hr"></div>
-                    <li>
+                    <li class="select-none">
                       <span class="image-icon-wrapper">
                         <img class="image-icon" src="/static/image/2.jpeg" />
                       </span>
@@ -482,7 +482,7 @@
                     </li>
                     <div class="gray-hr"></div>
 
-                    <li>
+                    <li class="select-none">
                       <span class="image-icon-wrapper">
                         <img class="image-icon" src="/static/image/3.jpeg" />
                       </span>
@@ -509,7 +509,7 @@
               </div>
             </div>
           </div>
-          <!-- Checkbox ListComponent -->
+          <!-- Checkbox ListComponent 1 -->
           <div class="single-component">
             <h2 id="checkbox">List Controls > checkbox</h2>
             <div>
@@ -517,21 +517,157 @@
                 <div class="list-component">
                   <ul>
                     <li>
-                      <span class="icon material-icons"> inbox </span>
-                      <p>Inbox</p>
+                      <div class="label_container">
+                        <div class="checkbox-container">
+                          <label for="list-item-1" class="checkbox-component">
+                            <input
+                              type="checkbox"
+                              id="list-item-1"
+                              class="checkbox"
+                            />
+                            <p>List item 1</p>
+                          </label>
+                        </div>
+                      </div>
+
+                      <span class="hover-icon material-icons"> comment </span>
                     </li>
                     <li>
-                      <span class="icon material-icons"> drafts </span>
-                      <p>Drafts</p>
+                      <div class="label_container">
+                        <div class="checkbox-container">
+                          <label for="list-item-2" class="checkbox-component">
+                            <input
+                              type="checkbox"
+                              id="list-item-2"
+                              class="checkbox"
+                            />
+                            <p>List item 2</p>
+                          </label>
+                        </div>
+                      </div>
+
+                      <span class="hover-icon material-icons"> comment </span>
+                    </li>
+                    <li>
+                      <div class="label_container">
+                        <div class="checkbox-container">
+                          <label for="list-item-3" class="checkbox-component">
+                            <input
+                              type="checkbox"
+                              id="list-item-3"
+                              class="checkbox"
+                            />
+                            <p>List item 3</p>
+                          </label>
+                        </div>
+                      </div>
+
+                      <span class="hover-icon material-icons"> comment </span>
+                    </li>
+                    <li>
+                      <div class="label_container">
+                        <div class="checkbox-container">
+                          <label for="list-item-4" class="checkbox-component">
+                            <input
+                              type="checkbox"
+                              id="list-item-4"
+                              class="checkbox"
+                            />
+                            <p>List item 4</p>
+                          </label>
+                        </div>
+                      </div>
+
+                      <span class="hover-icon material-icons"> comment </span>
                     </li>
                   </ul>
-                  <hr class="list-hr" />
+                </div>
+              </div>
+              <div class="component-bottom">
+                <a
+                  target="_blank"
+                  href="https://mui.com/material-ui/react-list/#checkbox"
+                  >mui-link</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Checkbox ListComponent 2 -->
+          <div class="single-component">
+            <p id="checkbox">
+              The checkbox is the secondary action for the list item and a
+              separate target.
+            </p>
+            <div>
+              <div class="component-box align-list-items-component-box">
+                <div class="list-component">
                   <ul>
                     <li>
-                      <p>Trash</p>
+                      <span class="image-icon-wrapper">
+                        <img class="image-icon" src="/static/image/1.jpeg" />
+                      </span>
+                      <label for="list-item-1" class="label_container">
+                        <div class="checkbox-container">
+                          <label class="checkbox-component">
+                            <input
+                              type="checkbox"
+                              id="list-item-1"
+                              class="checkbox"
+                            />
+                            <p>List item 1</p>
+                          </label>
+                        </div>
+                      </label>
+
+                      <span class="hover-icon material-icons"> comment </span>
                     </li>
                     <li>
-                      <p>Spam</p>
+                      <label for="list-item-2" class="label_container">
+                        <div class="checkbox-container">
+                          <label class="checkbox-component">
+                            <input
+                              type="checkbox"
+                              id="list-item-2"
+                              class="checkbox"
+                            />
+                          </label>
+                        </div>
+                        <p>List item 2</p>
+                      </label>
+
+                      <span class="hover-icon material-icons"> comment </span>
+                    </li>
+                    <li>
+                      <label for="list-item-3" class="label_container">
+                        <div class="checkbox-container">
+                          <label class="checkbox-component">
+                            <input
+                              type="checkbox"
+                              id="list-item-3"
+                              class="checkbox"
+                            />
+                          </label>
+                        </div>
+                        <p>List item 3</p>
+                      </label>
+
+                      <span class="hover-icon material-icons"> comment </span>
+                    </li>
+                    <li>
+                      <label for="list-item-4" class="label_container">
+                        <div class="checkbox-container">
+                          <label class="checkbox-component">
+                            <input
+                              type="checkbox"
+                              id="list-item-4"
+                              class="checkbox"
+                            />
+                          </label>
+                        </div>
+                        <p>List item 4</p>
+                      </label>
+
+                      <span class="hover-icon material-icons"> comment </span>
                     </li>
                   </ul>
                 </div>
