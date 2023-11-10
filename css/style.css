@@ -466,6 +466,10 @@ input[id=check1]:checked {
   background-color: white;
 }
 
+.gutterless-list li {
+  padding: 15px 7px 15px 0 !important;
+}
+
 .right {
   float: right;
 }
