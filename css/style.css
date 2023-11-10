@@ -474,6 +474,10 @@ input[id=check1]:checked {
   display: none;
 }
 
+.visibility-hidden {
+  visibility: hidden;
+}
+
 .red {
   border: 1px solid red;
 }
