@@ -455,6 +455,16 @@ input[id="check1"]:checked{
       }
 }
 
+.sticky-component {
+    height : 250px;
+    overflow : scroll;
+    .sticky-header {
+        position : sticky;
+        top : 0;
+        background-color : white;
+    }
+}
+
 .right {
     float :right;
 }
