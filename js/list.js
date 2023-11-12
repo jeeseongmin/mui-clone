@@ -40,6 +40,19 @@ function clickTabBtn(event) {
   tabContents.innerText = text;
 }
 
+// accordion 관련 js 작성하기.
+function toggleAccordion(event) {
+  let target = event.target;
+
+  if (event.target.tagName === "SPAN") target = event.target.parentNode;
+  console.log(target, event.target.tagName);
+  let accordion = target.parentNode;
+  let icon = accordion.querySelector(".material-icons");
+  console.log(accordion, icon);
+  accordion.classList.toggle("select-accrodion");
+  icon.classList.toggle("accordion-expanded");
+}
+
 /* Ripple */
 Array.from(document.querySelectorAll(".material-ripple")).forEach((a) => {
   a.addEventListener("click", function (e) {

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html,
 body {
   padding: 0;
@@ -36,6 +37,7 @@ ul {
   padding-top: 60px;
   padding-left: 60px;
   padding-right: 60px;
+  padding-bottom: 120px;
   height: auto;
   box-sizing: border-box;
   max-width: 105ch;
@@ -113,6 +115,11 @@ ul {
   height: 24px;
   display: flex;
   align-items: center;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5;
+  letter-spacing: 0.00938em;
 }
 .list-component ul {
   padding: 8px 0;
@@ -131,6 +138,87 @@ ul {
 }
 .list-component li:hover:not(.folder-li, .select-none, .selected) {
   background-color: rgb(244, 244, 244);
+}
+
+.accordion-component {
+  width: 100%;
+  background-color: white;
+}
+.accordion-component .accordion-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #f3f6f9;
+}
+.accordion-component .accordion-wrapper .select-accrodion {
+  height: 120px !important;
+  margin: 20px 0;
+  transition: height 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, margin 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+.accordion-component .accordion-wrapper .select-accrodion:first-of-type {
+  margin-top: 0;
+}
+.accordion-component .accordion-wrapper .toggle-icon {
+    transform: rotate(0deg);
+     -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transition: transform 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  -webkit-transition: -webkit-transform 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+.accordion-component .accordion-wrapper .accordion-expanded {
+    transform: rotate(180deg);
+     -ms-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  transition: transform 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  -webkit-transition: -webkit-transform 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+.accordion-component .accordion-wrapper .accordion {
+  display: flex;
+  height: 48px;
+  flex-direction: column;
+  background-color: white;
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 15px;
+  box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  overflow: hidden;
+  border-bottom: 1px solid rgb(205, 203, 203);
+  transition: height 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, margin 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5;
+  letter-spacing: 0.00938em;
+}
+.accordion-component .accordion-wrapper .accordion button {
+  height: 40px;
+  background-color: white;
+  border: none;
+  padding: 0;
+  padding: 24px 24px;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.accordion-component .accordion-wrapper .accordion button:disabled {
+  background-color: rgba(0, 0, 0, 0.12);
+}
+.accordion-component .accordion-wrapper .accordion .accordion-header {
+  display: flex;
+  justify-content: space-between;
+}
+.accordion-component .accordion-wrapper .accordion .accordion-contents {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  padding: 12px 24px;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5;
+  letter-spacing: 0.00938em;
 }
 
 .tab-component .tab-wrapper {
