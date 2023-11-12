@@ -1,0 +1,886 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MUI Clone</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/lists.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=IBM Plex Sans Condensed"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+  </head>
+  <body>
+    <!-- nav -->
+    <nav></nav>
+    <div id="contents">
+      <!-- left aside -->
+      <aside>
+        <div class="logo-wrapper">
+          <a
+            class="MuiBox-root css-1wzy1hs"
+            aria-label="go to homepage"
+            href="/"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="30"
+              height="32"
+              viewBox="0 0 36 32"
+              fill="none"
+              class="css-1170n61"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M30.343 21.976a1 1 0 00.502-.864l.018-5.787a1 1 0 01.502-.864l3.137-1.802a1 1 0 011.498.867v10.521a1 1 0 01-.502.867l-11.839 6.8a1 1 0 01-.994.001l-9.291-5.314a1 1 0 01-.504-.868v-5.305c0-.006.007-.01.013-.007.005.003.012 0 .012-.007v-.006c0-.004.002-.008.006-.01l7.652-4.396c.007-.004.004-.015-.004-.015a.008.008 0 01-.008-.008l.015-5.201a1 1 0 00-1.5-.87l-5.687 3.277a1 1 0 01-.998 0L6.666 9.7a1 1 0 00-1.499.866v9.4a1 1 0 01-1.496.869l-3.166-1.81a1 1 0 01-.504-.87l.028-16.43A1 1 0 011.527.86l10.845 6.229a1 1 0 00.996 0L24.21.86a1 1 0 011.498.868v16.434a1 1 0 01-.501.867l-5.678 3.27a1 1 0 00.004 1.735l3.132 1.783a1 1 0 00.993-.002l6.685-3.839zM31 7.234a1 1 0 001.514.857l3-1.8A1 1 0 0036 5.434V1.766A1 1 0 0034.486.91l-3 1.8a1 1 0 00-.486.857v3.668z"
+                fill="#007FFF"
+              ></path>
+            </svg>
+          </a>
+          <div class="devide-line"></div>
+          <p class="logoText">MUI CORE</p>
+        </div>
+        <div class="menu-wrapper">
+          <div>
+            <ul>
+              <li class="menu-list">
+                <a class="menu-big">
+                  <!-- <svg
+                    class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium ItemButtonIcon iconFocus css-1c9jvr1"
+                    focusable="false"
+                    aria-hidden="true"
+                    viewBox="0 0 24 24"
+                    data-testid="KeyboardArrowRightRoundedIcon"
+                  >
+                    <path
+                      d="M9.29 15.88 13.17 12 9.29 8.12a.9959.9959 0 0 1 0-1.41c.39-.39 1.02-.39 1.41 0l4.59 4.59c.39.39.39 1.02 0 1.41L10.7 17.3c-.39.39-1.02.39-1.41 0-.38-.39-.39-1.03 0-1.42z"
+                    ></path>
+                  </svg> -->
+                  Components
+                </a>
+                <div class="submenu-list">
+                  <p>INPUTS</p>
+                  <div class="menu-small-list">
+                    <a class="menu-small" href="/">List</a>
+                  </div>
+                </div>
+                <div class="submenu-list">
+                  <p>NAVIGATION</p>
+                  <div class="menu-small-list">
+                    <div class="menu-small">Tab</div>
+                  </div>
+                </div>
+                <div class="submenu-list">
+                  <p>SURFACES</p>
+                  <div class="menu-small-list">
+                    <div class="menu-small">Accordion</div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </aside>
+      <!-- 메인 컨텐츠 -->
+      <div id="main">
+        <div class="main-wrapper">
+          <div class="main-intro">
+            <h1>Lists</h1>
+            <p>Lists are continuous, vertical indexes of text or images.</p>
+            <p>
+              Lists are a continuous group of text or images. They are composed
+              of items containing primary and supplemental actions, which are
+              represented by icons and text.
+            </p>
+          </div>
+          <!-- Basic List Component  -->
+          <div class="single-component ">
+            <h2 id="basic-list">
+              Basic List
+              <a
+                aria-labelledby="basic-list"
+                class="anchor-link"
+                href="#basic-list"
+                tabindex="-1"
+              ></a>
+            </h2>
+            <div>
+              <div class="component-box">
+                <div class="list-component">
+                  <ul>
+                    <li>
+                      <span class="icon material-icons"> inbox </span>
+                      <p>Inbox</p>
+                    </li>
+                    <li>
+                      <span class="icon material-icons"> drafts </span>
+                      <p>Drafts</p>
+                    </li>
+                  </ul>
+                  <hr class="list-hr" />
+                  <ul>
+                    <li>
+                      <p>Trash</p>
+                    </li>
+                    <li>
+                      <p>Spam</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="component-bottom">
+                <a
+                  target="_blank"
+                  href="https://mui.com/material-ui/react-list/#basic-list"
+                  >mui-link</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Nested List Component -->
+          <div class="single-component ">
+            <h2 id="nested-list">
+              Nested List
+              <a
+                aria-labelledby="nested-list"
+                class="anchor-link"
+                href="#nested-list"
+                tabindex="-1"
+              ></a>
+            </h2>
+            <div>
+              <div class="component-box">
+                <div class="list-component">
+                  <ul>
+                    <div class="title">Nested List Items</div>
+                    <li>
+                      <span class="icon material-icons"> send </span>
+                      <p>Sent mail</p>
+                    </li>
+                    <li>
+                      <span class="icon material-icons"> drafts </span>
+                      <p>Drafts</p>
+                    </li>
+                    <li id="toggle-li">
+                      <span class="icon material-icons"> move_to_inbox </span>
+                      <p>Inbox</p>
+                      <span class="icon right material-icons">
+                        expand_more
+                      </span>
+                    </li>
+                    <li class="nested-li toggle-hidden">
+                      <span class="icon material-icons"> star_border </span>
+                      <p>Starred</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="component-bottom">
+                <a
+                  target="_blank"
+                  href="https://mui.com/material-ui/react-list/#nested-list"
+                  >mui-link</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Folder List Component -->
+          <div class="single-component">
+            <h2 id="folder-list">Folder List</h2>
+            <div>
+              <div class="component-box">
+                <div class="list-component">
+                  <ul>
+                    <li class="folder-li">
+                      <span class="folder-icon material-icons"> image </span>
+                      <div>
+                        <p>Photos</p>
+                        <span>Jan 9, 2014</span>
+                      </div>
+                    </li>
+                    <li class="folder-li">
+                      <span class="folder-icon material-icons"> work </span>
+                      <div>
+                        <p>Work</p>
+                        <span>Jan 7, 2014</span>
+                      </div>
+                    </li>
+                    <li class="folder-li">
+                      <span class="folder-icon material-icons">
+                        beach_access
+                      </span>
+                      <div>
+                        <p>Vacation</p>
+                        <span>July 20, 2014</span>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="component-bottom">
+                <a
+                  target="_blank"
+                  href="https://mui.com/material-ui/react-list/#folder-list"
+                  >mui-link</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Interactive List Component -->
+          <div class="single-component">
+            <h2 id="interactive">Interactive List</h2>
+            <div>
+              <div class="component-box interactive-component-box">
+                <div class="checkbox-container">
+                  <label class="checkbox-component">
+                    <input type="checkbox" id="enable-dense" class="checkbox" />
+                    <p>Enable dense</p>
+                  </label>
+                  <label class="checkbox-component">
+                    <input
+                      type="checkbox"
+                      id="enable-secondary-text"
+                      class="checkbox"
+                    />
+                    <p>Enable secondary text</p>
+                  </label>
+                </div>
+
+                <div class="grid">
+                  <!-- #1 -->
+                  <div>
+                    <h3>Text only</h3>
+                    <div class="list-component" id="interactive-component">
+                      <ul>
+                        <li class="select-none">
+                          <div class="contents">
+                            <p>Single-line item</p>
+                            <p id="secondary-text">Secondary text</p>
+                          </div>
+                        </li>
+                        <li class="select-none">
+                          <div class="contents">
+                            <p>Single-line item</p>
+                            <p id="secondary-text">Secondary text</p>
+                          </div>
+                        </li>
+                        <li class="select-none">
+                          <div class="contents">
+                            <p>Single-line item</p>
+                            <p id="secondary-text">Secondary text</p>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <!-- #2 -->
+                  <div>
+                    <h3>Icon with text</h3>
+                    <div class="list-component" id="interactive-component">
+                      <ul>
+                        <li class="select-none">
+                          <span class="icon material-icons"> folder </span>
+                          <div class="contents">
+                            <p>Single-line item</p>
+                            <p id="secondary-text">Secondary text</p>
+                          </div>
+                        </li>
+                        <li class="select-none">
+                          <span class="icon material-icons"> folder </span>
+                          <div class="contents">
+                            <p>Single-line item</p>
+                            <p id="secondary-text">Secondary text</p>
+                          </div>
+                        </li>
+                        <li class="select-none">
+                          <span class="icon material-icons"> folder </span>
+                          <div class="contents">
+                            <p>Single-line item</p>
+                            <p id="secondary-text">Secondary text</p>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <!-- #3 -->
+                  <div>
+                    <h3>Avatar with text</h3>
+                    <div class="list-component" id="interactive-component">
+                      <ul>
+                        <li class="folder-li">
+                          <span class="folder-icon material-icons">
+                            folder
+                          </span>
+                          <div class="contents">
+                            <p>Single-line item</p>
+                            <p id="secondary-text">Secondary text</p>
+                          </div>
+                        </li>
+                        <li class="folder-li">
+                          <span class="folder-icon material-icons">
+                            folder
+                          </span>
+                          <div class="contents">
+                            <p>Single-line item</p>
+                            <p id="secondary-text">Secondary text</p>
+                          </div>
+                        </li>
+                        <li class="folder-li">
+                          <span class="folder-icon material-icons">
+                            folder
+                          </span>
+                          <div class="contents">
+                            <p>Single-line item</p>
+                            <p id="secondary-text">Secondary text</p>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <!-- #4 -->
+                  <div>
+                    <h3>Avatar with text and icon</h3>
+                    <div class="list-component" id="interactive-component">
+                      <ul>
+                        <li class="folder-li">
+                          <span class="folder-icon material-icons">
+                            folder
+                          </span>
+                          <div class="contents">
+                            <p>Single-line item</p>
+                            <p id="secondary-text">Secondary text</p>
+                          </div>
+                          <span class="right hover-icon material-icons">
+                            delete
+                          </span>
+                        </li>
+                        <li class="folder-li">
+                          <span class="folder-icon material-icons">
+                            folder
+                          </span>
+                          <div class="contents">
+                            <p>Single-line item</p>
+                            <p id="secondary-text">Secondary text</p>
+                          </div>
+                          <span class="right hover-icon material-icons">
+                            delete
+                          </span>
+                        </li>
+                        <li class="folder-li">
+                          <span class="folder-icon material-icons">
+                            folder
+                          </span>
+                          <div class="contents">
+                            <p>Single-line item</p>
+                            <p id="secondary-text">Secondary text</p>
+                          </div>
+                          <span class="right hover-icon material-icons">
+                            delete
+                          </span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="component-bottom">
+                <a
+                  target="_blank"
+                  href="https://mui.com/material-ui/react-list/#interactive"
+                  >mui-link</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Selective ListItem Component -->
+          <div class="single-component">
+            <h2 id="selected-listitem">Selected ListItem</h2>
+            <div>
+              <div class="component-box">
+                <div class="list-component">
+                  <ul>
+                    <li class="selected" id="selective-li">
+                      <span class="icon material-icons"> inbox </span>
+                      <p>Inbox</p>
+                    </li>
+                    <li id="selective-li">
+                      <span class="icon material-icons"> drafts </span>
+                      <p>Drafts</p>
+                    </li>
+                  </ul>
+                  <hr class="list-hr" />
+                  <ul>
+                    <li id="selective-li">
+                      <p>Trash</p>
+                    </li>
+                    <li id="selective-li">
+                      <p>Spam</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="component-bottom">
+                <a
+                  target="_blank"
+                  href="https://mui.com/material-ui/react-list/#selected-listitem"
+                  >mui-link</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Align List Items Component -->
+          <div class="single-component">
+            <h2 id="align-list-items">Align List Items</h2>
+            <div>
+              <div class="component-box">
+                <div class="list-component">
+                  <ul>
+                    <li class="select-none">
+                      <span class="image-icon-wrapper">
+                        <img class="image-icon" src="/static/image/1.jpeg" />
+                      </span>
+                      <div class="contents">
+                        <p>Brunch this weekend?</p>
+                        <div>
+                          <span id="secondary-text">
+                            <span class="font-black">Ali Connors</span> - I'll
+                            be in your neighborhood doing errands this…
+                          </span>
+                        </div>
+                      </div>
+                    </li>
+                    <div class="gray-hr"></div>
+                    <li class="select-none">
+                      <span class="image-icon-wrapper">
+                        <img class="image-icon" src="/static/image/2.jpeg" />
+                      </span>
+
+                      <div class="contents">
+                        <p>Summer BBQ</p>
+                        <div>
+                          <span id="secondary-text">
+                            <span class="font-black"
+                              >to Scott, Alex, Jennifer</span
+                            >
+                            - Wish I could come, but I'm out of town this…
+                          </span>
+                        </div>
+                      </div>
+                    </li>
+                    <div class="gray-hr"></div>
+
+                    <li class="select-none">
+                      <span class="image-icon-wrapper">
+                        <img class="image-icon" src="/static/image/3.jpeg" />
+                      </span>
+
+                      <div class="contents">
+                        <p>Oui Oui</p>
+                        <div>
+                          <span id="secondary-text">
+                            <span class="font-black">Sandra Adams</span>
+                            - Do you have Paris recommendations? Have you ever…
+                          </span>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="component-bottom">
+                <a
+                  target="_blank"
+                  href="https://mui.com/material-ui/react-list/#align-list-items"
+                  >mui-link</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Checkbox ListComponent 1 -->
+          <div class="single-component">
+            <h2 id="checkbox">List Controls > checkbox</h2>
+            <div>
+              <div class="component-box align-list-items-component-box">
+                <div class="list-component">
+                  <ul>
+                    <li>
+                      <div class="label_container">
+                        <div class="checkbox-container">
+                          <label for="list-item-1" class="checkbox-component">
+                            <input
+                              type="checkbox"
+                              id="list-item-1"
+                              class="checkbox"
+                            />
+                            <p>List item 1</p>
+                          </label>
+                        </div>
+                      </div>
+
+                      <span class="hover-icon material-icons"> comment </span>
+                    </li>
+                    <li>
+                      <div class="label_container">
+                        <div class="checkbox-container">
+                          <label for="list-item-2" class="checkbox-component">
+                            <input
+                              type="checkbox"
+                              id="list-item-2"
+                              class="checkbox"
+                            />
+                            <p>List item 2</p>
+                          </label>
+                        </div>
+                      </div>
+
+                      <span class="hover-icon material-icons"> comment </span>
+                    </li>
+                    <li>
+                      <div class="label_container">
+                        <div class="checkbox-container">
+                          <label for="list-item-3" class="checkbox-component">
+                            <input
+                              type="checkbox"
+                              id="list-item-3"
+                              class="checkbox"
+                            />
+                            <p>List item 3</p>
+                          </label>
+                        </div>
+                      </div>
+
+                      <span class="hover-icon material-icons"> comment </span>
+                    </li>
+                    <li>
+                      <div class="label_container">
+                        <div class="checkbox-container">
+                          <label for="list-item-4" class="checkbox-component">
+                            <input
+                              type="checkbox"
+                              id="list-item-4"
+                              class="checkbox"
+                            />
+                            <p>List item 4</p>
+                          </label>
+                        </div>
+                      </div>
+
+                      <span class="hover-icon material-icons"> comment </span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="component-bottom">
+                <a
+                  target="_blank"
+                  href="https://mui.com/material-ui/react-list/#checkbox"
+                  >mui-link</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Checkbox ListComponent 2 -->
+          <div class="single-component">
+            <p id="checkbox">
+              The checkbox is the secondary action for the list item and a
+              separate target.
+            </p>
+            <div>
+              <div class="component-box align-list-items-component-box">
+                <div class="list-component">
+                  <ul>
+                    <li>
+                      <span class="image-icon-wrapper">
+                        <img class="image-icon" src="/static/image/1.jpeg" />
+                      </span>
+                      <div class="label_container">
+                        <div class="checkbox-container">
+                          <p>List item 1</p>
+                        </div>
+                      </div>
+                      <label class="checkbox-component">
+                        <input
+                          type="checkbox"
+                          id="list-item-1"
+                          class="checkbox"
+                        />
+                      </label>
+                    </li>
+                    <li>
+                      <span class="image-icon-wrapper">
+                        <img class="image-icon" src="/static/image/2.jpeg" />
+                      </span>
+                      <div class="label_container">
+                        <div class="checkbox-container">
+                          <p>List item 2</p>
+                        </div>
+                      </div>
+                      <label class="checkbox-component">
+                        <input
+                          type="checkbox"
+                          id="list-item-2"
+                          class="checkbox"
+                        />
+                      </label>
+                    </li>
+                    <li>
+                      <span class="image-icon-wrapper">
+                        <img class="image-icon" src="/static/image/3.jpeg" />
+                      </span>
+                      <div class="label_container">
+                        <div class="checkbox-container">
+                          <p>List item 3</p>
+                        </div>
+                      </div>
+                      <label class="checkbox-component">
+                        <input
+                          type="checkbox"
+                          id="list-item-3"
+                          class="checkbox"
+                        />
+                      </label>
+                    </li>
+                    <li>
+                      <span class="image-icon-wrapper">
+                        <img class="image-icon" src="/static/image/4.jpeg" />
+                      </span>
+                      <div class="label_container">
+                        <div class="checkbox-container">
+                          <p>List item 4</p>
+                        </div>
+                      </div>
+                      <label class="checkbox-component">
+                        <input
+                          type="checkbox"
+                          id="list-item-4"
+                          class="checkbox"
+                        />
+                      </label>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="component-bottom">
+                <a
+                  target="_blank"
+                  href="https://mui.com/material-ui/react-list/#checkbox"
+                  >mui-link</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Switch Component -->
+          <div class="single-component">
+            <h2 id="switch">List Controls > switch</h2>
+            <div>
+              <div class="component-box">
+                <div class="list-component">
+                  <ul>
+                    <div class="title">Settings</div>
+                    <li class="select-none">
+                      <span class="icon material-icons"> wifi </span>
+                      <p>Wi-Fi</p>
+                      <div class="switch-wrapper">
+                        <input
+                          type="checkbox"
+                          id="switch-component"
+                          class="switch-component"
+                        />
+                        <label for="switch-component" class="switch-label">
+                          <span class="switch-btn"></span>
+                        </label>
+                      </div>
+                    </li>
+                    <li class="select-none">
+                      <span class="icon material-icons"> bluetooth </span>
+                      <p>Bluetooth</p>
+                      <div class="switch-wrapper">
+                        <input
+                          type="checkbox"
+                          id="switch-component2"
+                          class="switch-component"
+                        />
+                        <label for="switch-component2" class="switch-label">
+                          <span class="switch-btn"></span>
+                        </label>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="component-bottom">
+                <a
+                  target="_blank"
+                  href="https://mui.com/material-ui/react-list/#switch"
+                  >mui-link</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Sticky subheader Component -->
+          <div class="single-component">
+            <h2 id="sticky-subheader">Sticky subheader</h2>
+            <div>
+              <div class="component-box">
+                <div class="list-component sticky-component">
+                  <ul>
+                    <div class="title sticky-header">I'm sticky 0</div>
+                    <li>
+                      <p>Item 0</p>
+                    </li>
+                    <li>
+                      <p>Item 1</p>
+                    </li>
+                    <li>
+                      <p>Item 2</p>
+                    </li>
+                    <div class="title sticky-header">I'm sticky 1</div>
+                    <li>
+                      <p>Item 0</p>
+                    </li>
+                    <li>
+                      <p>Item 1</p>
+                    </li>
+                    <li>
+                      <p>Item 2</p>
+                    </li>
+                    <div class="title sticky-header">I'm sticky 2</div>
+                    <li>
+                      <p>Item 0</p>
+                    </li>
+                    <li>
+                      <p>Item 1</p>
+                    </li>
+                    <li>
+                      <p>Item 2</p>
+                    </li>
+                    <div class="title sticky-header">I'm sticky 3</div>
+                    <li>
+                      <p>Item 0</p>
+                    </li>
+                    <li>
+                      <p>Item 1</p>
+                    </li>
+                    <li>
+                      <p>Item 2</p>
+                    </li>
+                    <div class="title sticky-header">I'm sticky 4</div>
+                    <li>
+                      <p>Item 0</p>
+                    </li>
+                    <li>
+                      <p>Item 1</p>
+                    </li>
+                  </ul>
+                  </ul>
+                </div>
+              </div>
+              <div class="component-bottom">
+                <a
+                  target="_blank"
+                  href="https://mui.com/material-ui/react-list/#sticky-subheader"
+                  >mui-link</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Inset List Item Component -->
+          <div class="single-component">
+            <h2 id="inset-list-item">Inset List Item</h2>
+            <div>
+              <div class="component-box">
+                <div class="list-component">
+                  <ul>
+                    <li>
+                      <span class="icon material-icons"> star </span>
+                      <p>Chelsea Otakan</p>
+                    </li>
+                    <li>
+                      <span class="icon material-icons visibility-hidden"> star </span>
+                      <p>Eric Hoffman</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="component-bottom">
+                <a
+                  target="_blank"
+                  href="https://mui.com/material-ui/react-list/#inset-list-item"
+                  >mui-link</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Gutterless List Component -->
+          <div class="single-component">
+            <h2 id="gutterless-list">Gutterless List</h2>
+            <div>
+              <div class="component-box">
+                <div class="list-component gutterless-list">
+                  <ul>
+                    <li>
+                      <p>Line item 1</p>
+                      <span class="icon material-icons"> comment </span>
+                    </li>
+                    <li>
+                      <p>Line item 2</p>
+                      <span class="icon material-icons"> comment </span>
+                    </li>
+                    <li>
+                      <p>Line item 3</p>
+                      <span class="icon material-icons"> comment </span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="component-bottom">
+                <a
+                  target="_blank"
+                  href="https://mui.com/material-ui/react-list/#gutterless-list"
+                  >mui-link</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Virtualized List Component -->
+          <div class="single-component">
+            <h2 id="virtualized-list">Virtualized List</h2>
+            <div>
+              <div class="component-box">
+                <div class="list-component virtualized-list" id="virtualized-component">
+                  <ul>
+                  </ul>
+                </div>
+              </div>
+              <div class="component-bottom">
+                <a
+                  target="_blank"
+                  href="https://mui.com/material-ui/react-list/#virtualized-list"
+                  >mui-link</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- right aside : 컴포넌트 목차 -->
+        <div class="mark-wrapper"></div>
+      </div>
+    </div>
+  </body>
+
+  <script src="js/index.js"></script>
+  <script src="js/list.js"></script>
+</html>
