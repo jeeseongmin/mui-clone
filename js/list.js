@@ -41,14 +41,18 @@ function getList(scrollTop) {
 
 function renderList(startIndex, endIndex) {
   for (let i = startIndex; i <= endIndex; i++) {
-    let div = document.createElement("div");
-    div.className = "list-row";
-    div.style.top = `${i * listConfig.rowHeight}px`;
+    let listRowWrapper = document.createElement("div");
+    listRowWrapper.classList.add("list-row-wrapper");
+    listRowWrapper.style.top = `${i * listConfig.rowHeight}px`;
 
-    let span = document.createElement("span");
-    span.innerText = `Item ${i + 1}`;
+    let listRow = document.createElement("div");
+    listRow.classList.add("list-row");
+    listRow.classList.add("material-ripple");
+    listRow.dataset.color = "AFB0B1";
+    listRow.innerText = `Item ${i + 1}`;
 
-    div.appendChild(span);
-    listConfig.componentNode().appendChild(div);
+    listRowWrapper.appendChild(listRow);
+    listConfig.componentNode().appendChild(listRowWrapper);
   }
+  applyRippleStyle();
 }
