@@ -69,26 +69,36 @@ body {
     width: auto;
     height: 9200px;
 
-    .list-row {
+    .list-row-wrapper {
       position: absolute;
       left: 0px;
       top: 0px;
       height: 46px;
       width: 100%;
+      cursor: pointer;
+      user-select: none;
     }
 
-    span {
+    .list-row {
+      position: relative;
       width: auto;
+      height: 46px;
       margin: 0;
       font-weight: 400;
       font-size: 1rem;
       line-height: 1.5;
-      padding-top: 8px;
-      padding-bottom: 8px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
       padding-left: 16px;
       padding-right: 16px;
       letter-spacing: 0.00938em;
-      display: block;
+      z-index: 100;
+      opacity: 100%;
+    }
+
+    .list-row:hover {
+      background-color: #f4f4f4;
     }
   }
 }
@@ -100,4 +110,30 @@ body {
   margin-top: -1px;
   padding: 4px 8px;
   height: 40px;
+}
+
+@keyframes materialRipple {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  100% {
+    transform: translate(-50%, -50%) scale(var(--material-scale));
+    opacity: 0%;
+  }
+}
+
+.material-ripple {
+  position: relative;
+  overflow: hidden;
+  color: #000;
+  text-decoration: none;
+}
+
+.material-ripple .animate {
+  width: 2px;
+  height: 2px;
+  position: absolute;
+  border-radius: 50%;
+  animation: materialRipple 0.5s linear;
 }
