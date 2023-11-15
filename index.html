@@ -23,12 +23,61 @@
       </div>
 
       <!-- Basic Tabs -->
-      <div class="component-wrapper">
+      <div class="component-wrapper" id="tabs">
         <div class="component-header">
           <h2>Basic tabs</h2>
           <p>A basic example with tab panels.</p>
         </div>
-        <div class="component-contents"></div>
+        <div class="component-contents">
+          <div class="tab-wrapper">
+            <div class="tab-header">
+              <div class="tab-list" role="tab-list">
+                <button
+                  type="button"
+                  class="tab selected-tab"
+                  role="tab"
+                  aria-selected="false"
+                  id="tab-1"
+                  aria-controls="tabpanel-1"
+                >
+                  Item One
+                </button>
+                <button
+                  type="button"
+                  class="tab"
+                  role="tab"
+                  aria-selected="false"
+                  id="tab-2"
+                  aria-controls="tabpanel-2"
+                >
+                  Item Two
+                </button>
+                <button
+                  type="button"
+                  class="tab"
+                  role="tab"
+                  aria-selected="false"
+                  id="tab-3"
+                  aria-controls="tabpanel-3"
+                >
+                  Item Three
+                </button>
+              </div>
+              <span class="selected-underline" id="selected-underline"></span>
+            </div>
+            <div class="tabpanel-wrapper">
+              <div class="tabpanel" id="tabpanel-1">
+                <p>Item One</p>
+              </div>
+              <div class="tabpanel" id="tabpanel-2" hidden>
+                <p>Item Two</p>
+              </div>
+              <div class="tabpanel" id="tabpanel-3" hidden>
+                <p>Item Three</p>
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="component-footer"></div>
       </div>
 
@@ -43,5 +92,6 @@
     </div>
   </body>
 
+  <script src="js/tab.js"></script>
   <script src="js/index.js"></script>
 </html>
