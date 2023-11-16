@@ -19,7 +19,7 @@ function handleTabClickEvent(event) {
   let currentTab = event.target;
   let currentTabIndex = currentTab.id.split("-")[1];
 
-  if (prevTab !== currentTab) {
+  if (prevTab !== currentTab && prevTab !== event.target.parentElement) {
     changeTabPanelContents(prevTabIndex, currentTabIndex);
     changeSelectedTab(prevTab, currentTab);
     changeUnderlinePosition(currentTabIndex);
