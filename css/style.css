@@ -129,4 +129,28 @@ body {
 #tabs .tabpanel-wrapper p {
   margin: 0;
   padding: 0;
+}
+
+@keyframes materialRipple {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(var(--material-scale));
+    opacity: 0%;
+  }
+}
+.material-ripple {
+  position: relative;
+  overflow: hidden;
+  color: #000;
+  text-decoration: none;
+}
+
+.material-ripple .animate {
+  width: 2px;
+  height: 2px;
+  position: absolute;
+  border-radius: 50%;
+  animation: materialRipple 0.5s linear;
 }/*# sourceMappingURL=style.css.map */
