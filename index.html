@@ -6,6 +6,10 @@
     <title>MUI Clone</title>
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
   </head>
   <body>
     <div class="layout">
@@ -94,13 +98,95 @@
         <div class="component-header">
           <h2>Basic accordion</h2>
         </div>
-        <div class="component-contents"></div>
+        <div class="component-contents">
+          <div class="accordion-wrapper">
+            <!-- Accordion 1 -->
+            <div class="accordion-component">
+              <div
+                class="accordion-button"
+                aria-expanded="false"
+                role="button"
+                id="accordion-button"
+                onclick="toggleAccordion(event)"
+              >
+                <div class="accordion-name">
+                  <p>Accordion 1</p>
+                </div>
+                <div class="icon-wrapper">
+                  <span class="material-symbols-outlined"> expand_more </span>
+                </div>
+              </div>
+              <div class="accordion-panel">
+                <div>
+                  <div class="accordion-panel-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Suspendisse malesuada lacus ex, sit amet blandit leo
+                    lobortis eget.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Accordion 2 -->
+            <div class="accordion-component">
+              <div
+                class="accordion-button"
+                aria-expanded="false"
+                role="button"
+                id="accordion-button"
+                onclick="toggleAccordion(event)"
+              >
+                <div class="accordion-name">
+                  <p>Accordion 2</p>
+                </div>
+                <div class="icon-wrapper">
+                  <span class="material-symbols-outlined"> expand_more </span>
+                </div>
+              </div>
+              <div class="accordion-panel">
+                <div>
+                  <div class="accordion-panel-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Suspendisse malesuada lacus ex, sit amet blandit leo
+                    lobortis eget.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Accordion 3 -->
+            <div class="accordion-component disabled">
+              <div
+                class="accordion-button disabled"
+                aria-expanded="false"
+                role="button"
+                id="accordion-button"
+                onclick="toggleAccordion(event)"
+              >
+                <div class="accordion-name">
+                  <p>Disabled Accordion</p>
+                </div>
+                <div class="icon-wrapper">
+                  <span class="material-symbols-outlined"> expand_more </span>
+                </div>
+              </div>
+              <div class="accordion-panel">
+                <div>
+                  <div class="accordion-panel-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Suspendisse malesuada lacus ex, sit amet blandit leo
+                    lobortis eget.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="component-footer"></div>
       </div>
     </div>
   </body>
 
-  <script src="js/tab.js"></script>
   <script src="js/index.js"></script>
   <script src="js/list.js"></script>
+  <script src="js/tab.js"></script>
+  <script src="js/accordion.js"></script>
 </html>
