@@ -14,7 +14,7 @@ MUI에 있는 컴포넌트가 있는 페이지를 클론코딩하여 그대로 �
 | ---------------- | ------------------------------------------------------------ |
 | Virtualized List | https://mui.com/material-ui/react-list/#virtualized-list     |
 | Basic Tabs       | https://mui.com/material-ui/react-tabs/#basic-tabs           |
-| Baisc Accordion  | https://mui.com/material-ui/react-accordion/#basic-accordion |
+| Basic Accordion  | https://mui.com/material-ui/react-accordion/#basic-accordion |
 
 ## 일정 관리
 
